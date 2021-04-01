@@ -20,12 +20,12 @@ if (
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => res.send(`Welcome to the employee service - IsValid = ${isValid}`));
-app.use('/employees', employeesRoutes);
-app.use('/details', detailsRoutes);
+app.get('/api', (req, res) => res.send(`Welcome to the employee service - IsValid = ${isValid}`));
+app.use('/api/employees', employeesRoutes);
+app.use('/api/details', detailsRoutes);
 
 app.listen(PORT, () => console.log(`REST API running on port ${PORT}`));
