@@ -24,8 +24,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => res.send(`Welcome to the employee service - IsValid = ${isValid}`));
-app.use('/employees', employeesRoutes);
-app.use('/details', detailsRoutes);
+app.get('/api', (req, res) => res.send(`Welcome to the employee service - IsValid = ${isValid}`));
+app.use('/api/employees', employeesRoutes);
+app.use('/api/details', detailsRoutes);
 
 app.listen(PORT, () => console.log(`REST API running on port ${PORT}`));
