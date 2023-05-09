@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Backend service of MU AKS",
   "main": "index.js",
-  "author": "Manulife University - AKS Booster",
+  "author": "Manulife University - AKS Starter API",
   "license": "ISC",
   "scripts": {
     "start": "node -r esm src/index.js"
@@ -16,6 +16,9 @@
     "cors": "^2.8.5",
     "esm": "^3.2.25",
     "express": "^4.17.1",
-    "mssql": "^5.1.0"
+    "mssql": "^6.2.3"
+  },
+  "overrides":     {
+    "uuid": "7.0.3"
   }
 }
