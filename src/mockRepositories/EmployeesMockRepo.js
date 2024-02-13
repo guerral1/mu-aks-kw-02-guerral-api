@@ -1,4 +1,4 @@
-import { employee } from './mockData';
+import { employee } from './mockData.js';
 
 export default class EmployeesMockRepo {
   async getAllEmployees() {

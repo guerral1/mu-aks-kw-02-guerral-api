@@ -1,5 +1,5 @@
-import EmployeesRepo from '../repositories/EmployeesRepo';
-import EmployeesMockRepo from '../mockRepositories/EmployeesMockRepo';
+import EmployeesRepo from '../repositories/EmployeesRepo.js';
+import EmployeesMockRepo from '../mockRepositories/EmployeesMockRepo.js';
 
 const repo = process.env.USE_DB === 'true' ? new EmployeesRepo() : new EmployeesMockRepo();
 

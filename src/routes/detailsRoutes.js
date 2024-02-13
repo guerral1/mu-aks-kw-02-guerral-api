@@ -1,5 +1,5 @@
 import express from 'express';
-import { getDetailsById } from '../controllers/detailsController';
+import { getDetailsById } from '../controllers/detailsController.js';
 
 const router = express.Router();
 

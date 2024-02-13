@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import employeesRoutes from './routes/employeesRoutes';
-import detailsRoutes from './routes/detailsRoutes';
+import {default as employeesRoutes} from './routes/employeesRoutes.js';
+import {default as detailsRoutes} from './routes/detailsRoutes.js';
 
 const PORT = 3001;
 

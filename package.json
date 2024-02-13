@@ -1,24 +1,21 @@
 {
-  "name": "<lanid>-mu-aks-api",
-  "version": "1.0.0",
-  "description": "Backend service of MU AKS",
-  "main": "index.js",
-  "author": "Manulife University - AKS Starter API",
-  "license": "ISC",
-  "scripts": {
-    "start": "node -r esm src/index.js"
-  },
-  "keywords": [
-    "mu",
-    "aks"
-  ],
-  "dependencies": {
-    "cors": "^2.8.5",
-    "esm": "^3.2.25",
-    "express": "^4.17.1",
-    "mssql": "^6.2.3"
-  },
-  "overrides":     {
-    "uuid": "7.0.3"
-  }
+    "name": "<lanid>-mu-aks-api",
+    "version": "1.0.0",
+    "description": "Backend service of MU AKS",
+    "main": "index.js",
+    "author": "Manulife University - AKS Starter API",
+    "type": "module",
+    "license": "ISC",
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "keywords": [
+        "mu",
+        "aks"
+    ],
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "mssql": "^9.3.2"
+    }
 }
