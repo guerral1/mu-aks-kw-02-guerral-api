@@ -1,4 +1,4 @@
-import { detail } from './mockData';
+import { detail } from './mockData.js';
 
 export default class DetailsMockRepo {
   async getDetailsById(id) {

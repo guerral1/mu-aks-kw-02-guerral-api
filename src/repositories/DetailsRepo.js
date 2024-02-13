@@ -1,4 +1,4 @@
-import MssqlRepo from './MssqlRepo';
+import MssqlRepo from './MssqlRepo.js';
 
 export default class DetailsRepo extends MssqlRepo {
   async getDetailsById(id) {

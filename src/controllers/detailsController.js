@@ -1,5 +1,5 @@
-import DetailsRepo from '../repositories/DetailsRepo';
-import DetailsMockRepo from '../mockRepositories/DetailsMockRepo';
+import DetailsRepo from '../repositories/DetailsRepo.js';
+import DetailsMockRepo from '../mockRepositories/DetailsMockRepo.js';
 
 const repo = process.env.USE_DB === 'true' ? new DetailsRepo() : new DetailsMockRepo();
 
