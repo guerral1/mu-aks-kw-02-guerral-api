@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import {default as employeesRoutes} from './routes/employeesRoutes.js';
-import {default as detailsRoutes} from './routes/detailsRoutes.js';
+import { default as employeesRoutes } from './routes/employeesRoutes.js';
+import { default as detailsRoutes } from './routes/detailsRoutes.js';
 
 const PORT = 3001;
 
@@ -23,6 +23,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.disable('x-powered-by');
 
 app.get('/api', (req, res) => res.send(`Welcome to the employee service - IsValid = ${isValid}`));
 app.use('/api/employees', employeesRoutes);
