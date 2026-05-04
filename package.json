@@ -1,5 +1,5 @@
 {
-    "name": "<lanid>-mu-aks-api",
+    "name": "guerral-mu-aks-api",
     "version": "1.0.0",
     "description": "Backend service of MU AKS",
     "main": "index.js",
