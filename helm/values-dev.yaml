@@ -1,0 +1,4 @@
+# Resources
+replicas: 1
+cpuLimit: '250m'
+memoryLimit: '128Mi'

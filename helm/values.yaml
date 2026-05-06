@@ -1,0 +1,7 @@
+# Image
+imageRegistry: 'acrmuaksguerraldev.azurecr.io'
+dockerTag: '1.0'
+
+# Ports
+servicePort: 3001
+containerPort: 3001

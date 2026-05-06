@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}
+    spec:
+      nodeSelector:
+        'kubernetes.io/os': linux
+      containers:
+        - name: {{ .Release.Name }}
+          image: "{{ .Values.imageRegistry }}/{{ .Chart.Name }}:{{ .Values.dockerTag }}"
+          imagePullPolicy: Always
+          resources:
+            limits:
+              cpu: {{ .Values.cpuLimit }}
+              memory: {{ .Values.memoryLimit }}
+          ports:
+            - containerPort: {{ .Values.containerPort }}
