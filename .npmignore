@@ -1,0 +1,10 @@
+helm
+jenkins
+.scannerwork
+.dccache
+.dockerignore
+.prettierrc
+Dockerfile
+Dockerfile.local
+snyk_report.json
+snyk_code_report.json
